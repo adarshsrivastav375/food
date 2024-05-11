@@ -1,15 +1,23 @@
-import { Routes, Route, Navigate } from "react-router-dom"
-import Layout from "./layouts/Layout"
-
+import { Routes, Route, Navigate } from "react-router-dom";
+import Layout from "./layouts/Layout";
+import HomePage from "./components/HomePage";
 
 const AppRoutes = () => {
   return (
-      <Routes>
-          <Route path = "/" element ={<Layout> Home </Layout>} />
-          <Route path = "/user-profile" element ={<span >USER PROFILE</span>} />
-          <Route path="*" element={ <Navigate to = "/" />}/>
-      </Routes>
-  )
-}
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <Layout>
+            {" "}
+            <HomePage />
+          </Layout>
+        }
+      />
+      <Route path="/user-profile" element={<span>USER PROFILE</span>} />
+      <Route path="*" element={<Navigate to="/" />} />
+    </Routes>
+  );
+};
 
-export default AppRoutes
+export default AppRoutes;
