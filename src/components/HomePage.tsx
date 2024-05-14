@@ -17,8 +17,9 @@ const HomePage = () => {
             Order Takeaway even faster!
           </span>
           <span>
-            Download the MernEats App for faster ordering and personalised
-            recommendations
+            Download the{" "}
+            <span className="font-bold text-orange-500">Food Ocean</span> App
+            for faster ordering and personalised recommendations
           </span>
           <img src={appDownloadImg} alt="img" />
         </div>
